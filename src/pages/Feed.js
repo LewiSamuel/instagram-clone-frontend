@@ -30,7 +30,7 @@ class Feed extends Component{
 
 
     registerToSocket = () => {
-        const socket = io('http://localhost');
+        const socket = io(process.env.REACT_APP_API_URL);
 
         socket.on('post', newPost => {
             this.setState({ feed: [newPost, ... this.state.feed ]});
@@ -67,7 +67,7 @@ class Feed extends Component{
 
                         <img width="20"  src={more} alt='Mais'></img>
                     </header>
-                    <img src={`http://localhost/files/${post.image}`} />
+                    <img src={`${process.env.REACT_APP_API_URL}/files/${post.image}`} />
                     <footer>
                         <div className="actions">
                             <button type="button" onClick={() => this.handleLike(post._id)}>
