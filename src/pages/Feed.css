@@ -12,7 +12,7 @@ section#post-list article{
 }
 
 section#post-list article header{
-    padding: 20px;
+    padding: 20px 20px 10px 20px;
 
     display: flex;
     align-items: center;
@@ -42,7 +42,7 @@ section#post-list article > img{
 /* FOOTER */
 
 section#post-list article footer{
-    padding: 20px;
+    padding: 10px 20px 20px 20px;
 }
 
 section#post-list article footer .actions{
