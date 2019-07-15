@@ -38,6 +38,7 @@ class New extends Component{
         return (
             <form id="new-post" onSubmit={this.handleSubmit}>
                 <input type="file" 
+                accept="image/*"
                 onChange={this.handleImageChange}/>
 
                 <input
